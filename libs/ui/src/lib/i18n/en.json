@@ -1,4 +1,5 @@
 {
   "title": "Welcome to Demo App!",
-  "button": "Button"
+  "button": "Button",
+  "hello": "Hola"
 }

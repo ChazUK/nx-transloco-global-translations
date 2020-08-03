@@ -1,1 +1,4 @@
-{ "title": "Spanish Button" }
+{
+  "msg": "{{ ui.hello }} Amigo",
+  "button": "Spanish Button"
+}
