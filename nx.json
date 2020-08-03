@@ -28,6 +28,9 @@
     "demo-app-e2e": {
       "tags": [],
       "implicitDependencies": ["demo-app"]
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
