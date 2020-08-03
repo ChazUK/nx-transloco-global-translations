@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { TRANSLOCO_SCOPE } from '@ngneat/transloco';
+import { loader } from 'transloco.loader';
 
 @Component({
   selector: 'nx-transloco-global-translations-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  template: `
+    <ng-template transloco let-t>
+      <button>{{ t('ui.button') }} Text: {{ t('button.title') }}</button>
+    </ng-template>
+  `,
+  providers: [
+    {
+      provide: TRANSLOCO_SCOPE,
+      useValue: {
+        scope: 'button',
+        loader: loader((lang, root) => import(`./${root}/${lang}.json`)),
+      },
+    },
+  ],
 })
-export class ButtonComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ButtonComponent {}
