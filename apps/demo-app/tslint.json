@@ -1,0 +1,20 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "nxTranslocoGlobalTranslations",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "nx-transloco-global-translations",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}
