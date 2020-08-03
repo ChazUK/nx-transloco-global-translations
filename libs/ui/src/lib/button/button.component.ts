@@ -6,7 +6,8 @@ import { loader } from 'transloco.loader';
   selector: 'nx-transloco-global-translations-button',
   template: `
     <ng-template transloco let-t>
-      <button>{{ t('ui.button') }} Text: {{ t('button.title') }}</button>
+      <h4>{{ t('button.hello-friend') }}</h4>
+      <button>{{ t('ui.button') }} Text: {{ t('button.text') }}</button>
     </ng-template>
   `,
   providers: [

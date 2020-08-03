@@ -1,4 +1,4 @@
 {
-  "msg": "{{ ui.hello }} Amigo",
-  "button": "Spanish Button"
+  "hello-friend": "{{ ui.hello }} Amigo",
+  "text": "Spanish Button"
 }
